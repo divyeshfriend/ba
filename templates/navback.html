@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <script src="https//kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script> -->
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+<header>
+    <img src="/static/logo/mainlogo.png" alt="Chikitsak" class="logo">
+    <div class="menu-toggle"></div>
+    <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" id="btnlink"><button class="btn-login">Login</button></a></li>
+    </ul>
+</nav>
+</header>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('http://fonts.') */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-attachment: url();
+    background-attachment: fixed;
+    
+}
+
+header::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: chartreuse;
+}
+
+header{
+      position: relative;
+    width: 100%;
+     height: 100px;
+     position: sticky;
+     z-index: 5;
+        /* justify-content: center; */
+    
+
+}
+
+.logo{
+    box-sizing: 700;
+    margin-left:auto;
+     /* padding: 10px;  */
+     margin: 10px 50px;
+    width: 100px;
+    line-height: 80px;
+    border: 2px solid black;
+
+    /* color: red; */
+    /* line-height: 80px; */
+}
+nav{
+    float: right;
+}
+.clearfix{
+    clear:both;
+}
+nav ul{
+    
+    float: right;
+    margin-right:20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+    
+}
+
+nav ul li a{
+   color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+a:hover{
+    
+    transition: 0.5s;
+    border: 1px solid blueviolet
+
+    
+}
+#btnlink{
+    border: none;
+}
+.btn-login {
+	margin: 0 auto;
+	background-color: #4CAF50; /* Green */
+	border: 2px solid black;
+	color: white;
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 10px;
+    cursor: pointer;
+	
+}  
+.btn-login:hover{
+    background-color: #88c28a;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- another backup css -->
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* 
+nav::before {
+    content: "";
+    background-color: green;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+    opacity: 0.5;
+} */
+
+nav {
+    background-color: rgb(123, 167, 123);
+    width: 100%;
+    height: 100px;
+    /* justify-content: center; */
+}
+
+.logo {
+    margin-left: auto;
+    /* padding: 10px;  */
+    margin: 10px 50px;
+    width: 100px;
+    line-height: 80px;
+    border: 2px solid black;
+    /* color: red; */
+    /* line-height: 80px; */
+}
+
+.iii{
+    float: right;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 11px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+a:hover {
+    transition: 0.5s;
+    background-color:rgb(92, 179, 113)
+}
+
+#btnlink {
+    border: none;
+}
+
+.btn-login {
+    display: inline-block;
+    margin: 11px 31px;
+    background-color: #4CAF50;
+    /* Green */
+    border: 2px solid black;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #88c28a;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width:850px) {
+    logo{
+        margin-top: 5px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(114, 167, 167);
+        top: 100px;
+        left: 0;
+        text-align: center;
+    } 
+    nav ul li{
+        display: block;
+    }
+}

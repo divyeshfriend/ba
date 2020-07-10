@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    {% block links %}
+      
+    {% endblock links %}
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>{% block title %}
+      
+    {% endblock title %}</title>
+
+</head>
+<body>
+    <nav>
+        
+        <input type="checkbox" id=check>
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    <img src="/static/logo/mainlogo.png" alt="Chikitsak" class="logo">
+     
+    
+    <ul>
+        <li><a href="/landing">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+            <a href="/loginuser" class="btnlink"><button class="btn-login">Login</button></a>
+            <a href="/logoutuser" class="btnlink"><button class="btn-login">Logout</button></a>
+        </li>
+    </ul>
+</nav>
+{% block body %}
+  
+{% endblock body %}
+</body>
+</html>

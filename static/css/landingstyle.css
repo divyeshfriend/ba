@@ -1,0 +1,49 @@
+body{
+	font-family: 'Balsamiq Sans', cursive;
+	text-align:center;
+}
+.logo{
+	height: 390px;
+	width: 450px;
+	margin-top: 90px;
+}
+.button {
+	margin: 0 auto;
+	background-color: #4CAF50; /* Green */
+	border: 2px solid black;
+	color: white;
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 10px;
+	
+}    
+#sign{
+	margin-left: 20px;
+}
+.button span {
+  	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+  	padding-right: 25px;
+}
+
+.button:hover span:after {
+  	opacity: 1;
+  	right: 0;
+}

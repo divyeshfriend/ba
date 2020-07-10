@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    background: url(/static/background/loginback.jpeg) no-repeat;
+    background-size: cover;
+    height : 100vh;   
+    z-index: -1;
+}
+
+
+nav::before {
+    content: "";
+    background-color: rgb(221, 129, 43);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+    opacity: 0.7;
+} 
+
+nav {
+    
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    /* justify-content: center; */
+}
+
+.logo {
+    margin-left: auto;
+    /* padding: 10px;  */
+    margin: 10px 50px;
+    width: 100px;
+    line-height: 80px;
+    border: 2px solid black;
+    /* color: red; */
+    /* line-height: 80px; */
+}
+
+nav ul {
+    z-index: 5;
+    float: right;
+    margin-right: 20px;
+    margin-top: 11px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+.btnlink{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    border: 0;
+}
+
+a:hover {
+    transition: 0.5s;
+    background-color: aqua;
+    border: 1px solid blueviolet
+}
+
+
+.btn-login {
+    margin: 0 auto;
+    background-color: #4CAF50;
+    /* Green */
+    border: 2px solid black;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #88c28a;
+}
+
+.checkbtn {
+    /* padding-bottom: 20px; */
+    padding:0px 10px ;
+    font-size: 35px;
+    color: black;
+    float: right;
+    line-height: 100px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+   
+    
+    
+}
+
+
+#check {
+    display: none;
+}
+
+@media(max-width:900px) {
+    
+  
+
+    nav{
+        border :2px solid black
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 90vh;
+        background: rgb(97, 129, 129);
+        top: 90px;
+        /* left: 0; */
+        top: -200%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: -1;
+        border: 3px solid black;
+        border-top: none;
+       
+        
+    }
+    
+    nav{
+        z-index: 5;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px 0;
+        line-height:30px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    
+    }
+    a:hover{
+        background-color: rgb(203, 212, 203);
+    }
+
+    #check:checked ~ ul{
+        top:89px;
+    }
+    #check:checked ~ .checkbtn{
+        background-color: rgb(97, 129, 129);
+        border: 2px solid black;
+        border-bottom: none;
+        
+    }
+}
