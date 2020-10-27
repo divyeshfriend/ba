@@ -41,6 +41,7 @@ body{
 
 .button:hover span {
   	padding-right: 25px;
+	  margin:0em;
 }
 
 .button:hover span:after {
